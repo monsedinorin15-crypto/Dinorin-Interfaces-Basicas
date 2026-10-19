@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.dinero.PrimaryController">
+   <children>
+      <Label text="Desglose de dinero" />
+      
+      <HBox alignment="CENTER" spacing="10.0">
+          <children>
+              <TextField fx:id="txtDinero" promptText="9999" prefWidth="100.0" />
+              <Button fx:id="btnLimpiar" text="X" onAction="#handleLimpiar" prefWidth="40.0" />
+              <Button fx:id="btnDesglosar" text="Desglosar" onAction="#handleDesglosar" />  
+         </children>            
+      </HBox> 
+      
+      <HBox alignment="CENTER" spacing="10.0">       
+        
+   <TextArea fx:id="textDenominacion" prefWidth="180.0" prefHeight="220.0" editable="false"/>
+   <TextArea fx:id="txtCantidad" prefWidth="60.0" prefHeight="220.0" editable="false"/>    
+      </HBox>
+   </children>   
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
